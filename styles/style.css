@@ -50,7 +50,7 @@
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
-  line-height: 1.27em;
+  line-height: 1.3em;
   color: var(--text-title-color);
   background-color: var(--accent-color);
 }
@@ -356,12 +356,12 @@
     gap: 10px;
   } 
 
-  .content__title {
-    padding-block-start: 3px;
-  }
-
   .header__theme-menu {
     align-self: center;
+  }
+
+  .content__title {
+    margin-block-end: 2vb;
   }
 }
 

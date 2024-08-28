@@ -164,6 +164,10 @@
   gap: 20px;
 }
 
+.content-section:first-child {
+  padding-block-start: 60px;
+}
+
 .section-focus {
   grid-template-columns: 0.97fr 2fr;
   grid-template-rows: 1fr 1fr;
@@ -245,7 +249,7 @@
   inline-size: 100%;
   min-block-size: 768px;
   justify-content: center;
-  margin-top: 60px;
+  margin-top: 50px;
   position: relative;
   padding-inline: 20px;
 }
@@ -315,6 +319,7 @@
 
   .footer {
     min-block-size: 1024px;
+    margin-top: 60px;
   }
 
   .section-concentration {
@@ -382,7 +387,7 @@
   }
 
   :root {
-    --indent: 2.6vi;
+    --indent: 2.7vi;
   }
 
   .content__title {
@@ -411,45 +416,59 @@
   .section-goldfish {
     grid-template-columns: auto;
     grid-template-rows: auto;
-    
   }
 
   .section-picture {
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
     grid-template-rows: repeat(6, auto);
-    gap: 3.0vi;
+    gap: 1vb;
   }
   
   .section-picture__title {
-    grid-column: span 3;
+    grid-column: span 1;
+    grid-row: span 1;
   }
   
   .section-picture__sunset {
-    grid-column: span 3;
+    grid-column: span 1;
+    grid-row: span 1;
   }
   
   .section-picture__sweets {
-    grid-column: span 3;
+    grid-column: span 1;
+    grid-row: span 1;
   }
   
   .section-picture__music {
-    grid-column: span 3;
+    grid-column: span 1;
+    grid-row: span 1;
   }
 
   .section-picture__books {
-    grid-column: span 3;
+    grid-column: span 1;
+    grid-row: span 1;
   }
   
   .section-picture__street {
-    grid-column: span 3;
+    grid-column: span 1;
+    grid-row: span 1;
   }
   
   .footer {
     min-block-size: 668px;
+    margin-top: 37px;
   }
 
   .content-section {
     padding-block-start: 7.8vb;
+  }
+
+  .content-section:first-child {
+    padding-block-start: 40px;
+  }
+
+  .content-section:last-child {
+    padding-block-start: 49px;
   }
 
   .section-goldfish__title {
@@ -457,9 +476,7 @@
   }
 
   .content__picture {
-    inline-size: 95vi;
-    block-size: 100%;
-    object-fit: cover;
+    object-fit: contain;
   }
 
   .footer-title {
